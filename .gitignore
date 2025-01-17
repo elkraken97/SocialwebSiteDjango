@@ -1,0 +1,14 @@
+# Entornos virtuales
+venv/
+env/
+
+# Archivos compilados
+__pycache__/
+*.pyc
+
+# Archivos de configuración sensibles
+.env
+
+# Archivos de base de datos locales
+db.sqlite3
+migrations
