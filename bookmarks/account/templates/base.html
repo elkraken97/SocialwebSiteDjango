@@ -27,7 +27,7 @@
     Hello {{ request.user.first_name|default:request.user.username }},
     <form method="post" action="{% url 'logout' %}" class="igualquea">
     {% csrf_token %}
-    <button type="submit" class="igualquea">Logout</button>
+    <button type="submit">Logout</button>
     </form>
     {% else %}
     <a href="{% url 'login' %} ">Log-in</a>
