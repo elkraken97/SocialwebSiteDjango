@@ -25,7 +25,7 @@
     <span class="user">
     {% if request.user.is_authenticated %}
     Hello {{ request.user.first_name|default:request.user.username }},
-    <form method="post" action="{% url 'logout' %}" class="igualquea">
+    <form method="post" action="{% url 'logout' %}">
     {% csrf_token %}
     <button type="submit">Logout</button>
     </form>
